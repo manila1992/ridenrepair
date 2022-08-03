@@ -5,9 +5,9 @@ import Slider from "react-slick";
 import slide1 from "../../../images/slider/slide1.jpg"
 import slide3 from "../../../images/slider/slide3.jpg"
 import wheel from "../../../images/slider/wheel.png"
-import wheel2 from "../../../images/slider/wheel2.png"
+// import wheel2 from "../../../images/slider/wheel2.png"
 import car from "../../../images/slider/car.png"
-import car2 from "../../../images/slider/car2.png"
+// import car2 from "../../../images/slider/car2.png"
 
 class SliderOne extends Component{
 	render(){
@@ -24,16 +24,16 @@ class SliderOne extends Component{
 							<div className="slider-content container text-center text-white">
 								<div className="content-inner">
 									<h6 className="sub-title">best service ever</h6>
-									<h2 className="title">Car Service</h2>
+									<h2 className="title">Bike Service</h2>
 									<div className="car-wheel">
 										<img src={car} alt=""/>
-										<div className="wheel-1"><img src={wheel} alt=""/></div>
-										<div className="wheel-2"><img src={wheel} alt=""/></div>
+										{/* <div className="wheel-1"><img src={wheel} alt=""/></div>
+										<div className="wheel-2"><img src={wheel} alt=""/></div> */}
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="slider-item">								
+						{/* <div className="slider-item">								
 							<div className="slider-img">
 								<img src={slide3} alt=""/>
 							</div>
@@ -48,7 +48,7 @@ class SliderOne extends Component{
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</Slider>
 				</div>
 				

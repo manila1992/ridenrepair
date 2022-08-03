@@ -18,12 +18,12 @@ class aboutSection extends Component{
 					<div className="footer-info bg-primary">
 						<div className="container">
 							<div className="row align-items-center">
-								<div className="col-lg-3 col-md-6 col-sm-6 mb-30">
+								{/* <div className="col-lg-3 col-md-6 col-sm-6 mb-30">
 									<div className="footer-logo">
 										<img src={logo2} alt=""/> 
 									</div>
-								</div>
-								<div className="col-lg-3 col-md-6 col-sm-6 mb-30">
+								</div> */}
+								<div className="col-lg-4 col-md-6 col-sm-6 mb-30">
 									<div className="feature-container left footer-info-bx">
 										<div className="icon-lg">
 											<span className="icon-cell"><img src={icon3} alt=""/></span> 
@@ -33,23 +33,23 @@ class aboutSection extends Component{
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-md-6 col-sm-6 mb-30">
+								<div className="col-lg-4 col-md-6 col-sm-6 mb-30">
 									<div className="feature-container left footer-info-bx">
 										<div className="icon-lg">
 											<span className="icon-cell"><img src={icon1} alt=""/></span> 
 										</div>
 										<div className="icon-content">
-											<p>+001 123 456 790 <br/>(02) 3424 44 00</p>
+											<p>+001 123 456 790</p>
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-md-6 col-sm-6 mb-30">
+								<div className="col-lg-4 col-md-6 col-sm-6 mb-30">
 									<div className="feature-container left footer-info-bx">
 										<div className="icon-lg">
 											<span className="icon-cell"><img src={icon2} alt=""/></span> 
 										</div>
 										<div className="icon-content">
-											<p>info@yourdomain.com <br/>example@support.com</p>
+											<p>info@ridenrepair.com</p>
 										</div>
 									</div>
 								</div>

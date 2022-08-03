@@ -29,11 +29,11 @@ class AboutUs extends Component{
 					<div className="page-banner ovbl-dark" style={{backgroundImage: "url("+bnrImg+")"}}>
 						<div className="container">
 							<div className="page-banner-entry text-center">
-								<h1><span>About Us 1</span></h1>
+								<h1><span>About Us</span></h1>
 								<nav aria-label="breadcrumb" className="breadcrumb-row">
 									<ul className="breadcrumb">
 										<li className="breadcrumb-item"><Link to="/"><i className="las la-home"></i>Home</Link></li>
-										<li className="breadcrumb-item active" aria-current="page">About Us 1</li>
+										<li className="breadcrumb-item active" aria-current="page">About Us</li>
 									</ul>
 								</nav>
 							</div>

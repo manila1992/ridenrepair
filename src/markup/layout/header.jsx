@@ -70,11 +70,9 @@ class aboutSection extends Component{
 									</div>
 									<ul className="nav navbar-nav">	
 										<li className="active">
-											<Link to="#">Home<i className="fa fa-chevron-down"></i></Link>
-											<ul className="sub-menu">
-												<li><Link to="/"><span>Home 1</span> </Link></li>
-												<li><Link to="/index-2"><span>Home 2</span></Link></li>
-											</ul>
+											<Link to="/">Home</Link>
+										</li>
+										<li><Link to="/about-1">About Us</Link>
 										</li>
 										<li className="has-mega-menu "><Link to="#">Pages<i className="fa fa-chevron-down"></i></Link>
 											<ul className="mega-menu">
@@ -131,20 +129,7 @@ class aboutSection extends Component{
 												</li>
 											</ul>
 										</li>
-										<li><Link to="#">Blog <i className="fa fa-chevron-down"></i></Link>
-											<ul className="sub-menu left">
-												<li><Link to="/blog-grid"><span>Blog Grid</span></Link></li>
-												<li><Link to="/blog-grid-sidebar"><span>Blog Grid Sidebar</span></Link></li>
-												<li><Link to="/blog-masonry"><span>Blog Masonry</span></Link></li>
-												<li><Link to="/blog-list-sidebar"><span>Blog List Sidebar</span></Link></li>
-												<li><Link to="/blog-details"><span>Blog Details</span></Link></li>
-											</ul>
-										</li>
-										<li><Link to="#">Contact Us <i className="fa fa-chevron-down"></i></Link>
-											<ul className="sub-menu left">
-												<li><Link to="/contact-1"><span>Contact Us 1</span></Link></li>
-												<li><Link to="/contact-2"><span>Contact Us 2</span></Link></li>
-											</ul>
+										<li><Link to="/contact-1">Contact</Link>
 										</li>
 									</ul>
 									<ul className="social-media">
