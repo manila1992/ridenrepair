@@ -1,6 +1,6 @@
 {
-  "name": "serfix",
-  "homepage": "https://serfix.themetrades.com/react",
+  "name": "ridenrepair",
+  "homepage": "https://ridenrepair.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -57,11 +57,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manila1992/serfix.git"
+    "url": "git+https://github.com/manila1992/ridenrepair.git"
   },
   "author": "Manshya Enterprises LLC",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manila1992/serfix/issues"
+    "url": "https://github.com/manila1992/ridenrepair/issues"
   }
 }

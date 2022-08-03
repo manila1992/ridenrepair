@@ -72,15 +72,14 @@ class aboutSection extends Component{
 										<li className="active">
 											<Link to="/">Home</Link>
 										</li>
-										<li><Link to="/about-1">About Us</Link>
+										<li><Link to="/about">About Us</Link>
 										</li>
 										<li className="has-mega-menu "><Link to="#">Pages<i className="fa fa-chevron-down"></i></Link>
 											<ul className="mega-menu">
 												<li>
 													<Link to="#">Pages</Link>
 													<ul>
-														<li><Link to="/about-1"><span>About Us 1</span></Link></li>
-														<li><Link to="/about-2"><span>About Us 2</span></Link></li>
+														<li><Link to="/about"><span>About Us 1</span></Link></li>
 														<li><Link to="/service-1"><span>Service 1</span></Link></li>
 														<li><Link to="/service-2"><span>Service 2</span></Link></li>
 													</ul>

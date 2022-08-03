@@ -7,9 +7,7 @@ import PageScrollTop from './elements/page-scroll-top';
 
 // All Pages Router
 import Index from './pages/index';
-import Index2 from './pages/index-2';
-import AboutUs from './pages/about-1';
-import AboutUs2 from './pages/about-2';
+import AboutUs from './pages/about';
 import BlogDetails from './pages/blog-details';
 import BlogGrid from './pages/blog-grid';
 import BlogGridSidebar from './pages/blog-grid-sidebar';
@@ -47,9 +45,7 @@ class Markup extends Component{
 					<Switch>
 					
 						<Route path='/' exact component={Index} />
-						<Route path='/index-2' exact component={Index2} />
-						<Route path='/about-1' exact component={AboutUs} />
-						<Route path='/about-2' exact component={AboutUs2} />
+						<Route path='/about' exact component={AboutUs} />
 						<Route path='/blog-details' exact component={BlogDetails} />
 						<Route path='/blog-grid' exact component={BlogGrid} />
 						<Route path='/blog-grid-sidebar' exact component={BlogGridSidebar} />

@@ -42,7 +42,7 @@ class AboutUsFourSection extends Component{
 									<li>What parts should be replaced at what intervals?</li>
 									<li>How do I keep track of routine maintenance?</li>
 								</ul>
-								<Link to="/about-2" className="btn btn-primary btn-lg">READ MORE</Link>
+								<Link to="/about" className="btn btn-primary btn-lg">READ MORE</Link>
 							</div>
 						</div>
 					</div>
