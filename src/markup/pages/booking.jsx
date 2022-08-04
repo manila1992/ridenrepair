@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 // Layout
 import Header from "../layout/header";
@@ -7,9 +8,80 @@ import Footer from "../layout/footer";
 
 // Images
 import bnrImg from "../../images/banner/bnr4.jpg";
+import logo from "../../images/logo.png";
 
 class Booking extends Component{
+
+	loadScript = (src) => {
+		return new Promise((resolve) => {
+				const script = document.createElement("script");
+				script.src = src;
+				script.onload = () => {
+						resolve(true);
+				};
+				script.onerror = () => {
+						resolve(false);
+				};
+				document.body.appendChild(script);
+		});
+	}
 	
+	displayRazorpay = async () => {
+		const res = await this.loadScript(
+				"https://checkout.razorpay.com/v1/checkout.js"
+		);
+
+		if (!res) {
+				alert("Razorpay SDK failed to load. Are you online?");
+				return;
+		}
+
+		const data = await fetch('http://localhost:1337/razorpay', { method: 'POST' }).then(
+			(response) => response.json()
+		)
+		
+
+		// creating a new order
+		// const result = await axios.post("https://localhost:5000/payment/orders");
+
+		// if (!result) {
+		// 		alert("Server error. Are you online?");
+		// 		return;
+		// }
+
+		// Getting the order details back
+		// const { amount, id: order_id, currency } = result.data;
+
+		const options = {
+				key: 'rzp_test_K9AJpedBWJr6ah', // Enter the Key ID generated from the Dashboard
+				amount: data.amount,
+				currency: data.currency,
+				name: 'Soumya Corp.',
+				description: 'Test Transaction',
+				image: 'http://localhost:1337/logo.png',
+				order_id: data.id,
+				handler: function (response) {
+						alert(response.razorpay_payment_id)
+						alert(response.razorpay_order_id)
+						alert(response.razorpay_signature)
+				},
+				prefill: {
+						name: "Soumya Dey",
+						email: "SoumyaDey@example.com",
+						contact: "9999999999",
+				},
+				notes: {
+						address: "Soumya Dey Corporate Office",
+				},
+				theme: {
+						color: "#61dafb",
+				},
+		};
+
+		const paymentObject = new window.Razorpay(options);
+		paymentObject.open();
+	};
+
 	render(){
 		return (
 			<>
@@ -154,12 +226,12 @@ class Booking extends Component{
 											<div className="col-lg-12">
 												<div className="form-group">
 													<div className="input-group">
-														<textarea name="message" rows="4" className="form-control" required=""  placeholder="Type Message"></textarea>
+														<textarea name="message" rows="4" className="form-control" required=""  placeholder="Any additional details you can type here"></textarea>
 													</div>
 												</div>
 											</div>
 											<div className="col-lg-12">
-												<button name="submit" type="submit" value="Submit" className="btn btn-primary btn-lg"> Send Message</button>
+												<Link className="btn btn-primary btn-lg" onClick={this.displayRazorpay}>Book Now</Link>
 											</div>
 										</div>
 									</form>
